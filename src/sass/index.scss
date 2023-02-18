@@ -1,5 +1,14 @@
-$color :  palevioletred;
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 
-.text-pink {
-    color: $color;
-}
+@import "bootstrap/scss/bootstrap.scss";
+
+@import './variable';
+
+@import "./base/reset";
+
+@import "./modules/company-nav.scss";
+
+@import "./modules/main-section";
+
+@import './layout/mobile';
+

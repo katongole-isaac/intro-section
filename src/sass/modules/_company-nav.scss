@@ -1,0 +1,56 @@
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1em;
+}
+
+.menu-icon {
+  @extend .nav-icon;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  transition: all 0.3s;
+}
+
+.feature-dropdown {
+  top: 50px;
+  left: 25px;
+  display: none !important;
+  transition: all 0.4s;
+}
+
+@mixin displayBlock {
+  display: block !important;
+  z-index: 2;
+}
+.feature-menu-item:hover .feature-dropdown {
+  @include displayBlock;
+}
+
+.company-menu-item:hover .company-dropdown {
+  @include displayBlock;
+}
+
+.company-menu-item:hover .menu-icon {
+  transform: rotate(-180deg);
+}
+
+.feature-menu-item:hover .menu-icon {
+  transform: rotate(-180deg);
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+  background: #fafafa !important;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+.other {
+  a:last-child {
+    outline: 1px solid #000;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,46 @@
+@include media-breakpoint-down(sm) {
+  .display-1 {
+    font-size: 30px !important;
+  }
+  .container {
+    height: auto;
+    min-height: 0;
+  }
+  .icons {
+    margin-top: 0.5em;
+    gap: 0em;
+    position: relative;
+    .icon-wrapper {
+      // min-width: 200px;
+      width: auto;
+      height: auto;
+      min-height: 0;
+    }
+  }
+  .main-section {
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .icons {
+    position: absolute;
+  }
+  .container {
+    height: 80vh;
+    min-height: 80vh;
+  }
+  .main-section {
+    .content {
+      text-align: left;
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .text-nowrap {
+    display: block;
+  }
+}

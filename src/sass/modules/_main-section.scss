@@ -1,0 +1,45 @@
+.main-section {
+  height: 100%;
+  gap: 2em;
+  position: relative;
+  justify-content: center;
+  //   border: 2px solid coral;
+  height: 100%;
+
+  .icons {
+    gap: 1em;
+    // position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .icon-wrapper {
+      // min-width: 200px;
+      width: auto;
+      height: 35px;
+      min-height: 30px;
+    }
+  }
+
+  button {
+    background: #000;
+    width: 150px;
+    padding: 0.7em;
+    position: relative;
+    &:hover {
+      outline: 1px solid #000;
+      background: transparent;
+      color: #000;
+    }
+  }
+
+  .content {
+    color: $medium-gray;
+  }
+}
+
+.col {
+  .img-wrapper {
+    height: 100%;
+  }
+}
